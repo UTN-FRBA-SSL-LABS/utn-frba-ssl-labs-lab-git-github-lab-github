@@ -16,7 +16,7 @@ int restar(int a, int b) {
 
 //recibe dos parametros tipo entero y devuelve el producto entre ellos
 int multiplicar(int a, int b) {
-    return a * b; /* TODO: implementar */
+    return a * b; 
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
