@@ -13,10 +13,7 @@ operaciones.o: operaciones.c operaciones.h
 	$(CC) $(CFLAGS) -c operaciones.c
 
 clean:
-	rm -f *.o calculadora
-<<<<<<< HEAD
+	rm -f *.o calculadora	
 
 test:
-	@bash test_local.sh
-=======
->>>>>>> origin/feature/conflicto-demo
+	@bash test_local.sh	
