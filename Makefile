@@ -1,4 +1,4 @@
-CC     = gcc
+CC = gcc
 CFLAGS = -Wall -Wextra -std=c99
 
 all: calculadora
@@ -13,7 +13,7 @@ operaciones.o: operaciones.c operaciones.h
 	$(CC) $(CFLAGS) -c operaciones.c
 
 clean:
-	rm -f *.o calculadora	
+	rm -f *.o calculadora
 
 test:
-	@bash test_local.sh	
+	bash test_local.sh
