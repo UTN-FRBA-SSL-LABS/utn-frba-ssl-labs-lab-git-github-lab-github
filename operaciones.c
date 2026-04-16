@@ -23,3 +23,4 @@ int multiplicar(int a, int b) {
 int esPar(int n) {
     return (n % 2) == 0;
 }
+//cambio para c12
