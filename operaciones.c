@@ -24,3 +24,4 @@ int esPar(int n) {
     return (n % 2) == 0;
 }
 //cambio para c12
+//comentario compartido
