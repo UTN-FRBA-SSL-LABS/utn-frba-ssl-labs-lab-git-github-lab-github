@@ -1,4 +1,4 @@
-CC     = gcc
+CC = gcc
 CFLAGS = -Wall -Wextra -std=c99
 
 all: calculadora
@@ -16,4 +16,4 @@ clean:
 	rm -f *.o calculadora
 
 test:
-	@bash test_local.sh
+	bash test_local.sh
