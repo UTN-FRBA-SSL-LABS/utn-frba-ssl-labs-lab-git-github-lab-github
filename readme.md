@@ -1,7 +1,7 @@
 # Laboratorio: Git y GitHub
 
-**Nombre:** ___________________________
-**Compañero/a:** ___________________________
+**Nombre:** ______Federico Tomasello_____________________
+**Compañero/a:** _________Gonzalo Bolaña__________________
 
 ---
 
