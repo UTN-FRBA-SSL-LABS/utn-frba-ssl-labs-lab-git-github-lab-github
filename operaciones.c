@@ -13,10 +13,10 @@ int restar(int a, int b) {
 }
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-
-int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+//esta funcion toma 2 numeros y los multiplica, devolviendo el resultado de la multiplicacion
+//prueba para el pull request
+int multiplicar( int a,  int b) {
+    return a * b;
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
