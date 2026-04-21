@@ -2,25 +2,24 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(int a, int b) {
+int sumar(const int a, const int b) { /*lo cambio para que no se puedan modificar los valores adentro de la funcion*/
     return a + b;
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
 
-int restar(int a, int b) {
+int restar(const int a, const int b) {
     return a - b;
 }
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-
-int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+/* Multiplica dos enteros usando el operador * */
+int multiplicar(const int a,const int b) {
+    return a * b;
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
 int esPar(int n) {
-    return (n % 2) == 0;
+    return (n % 2) == 0; /* version main */
 }
