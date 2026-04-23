@@ -1,5 +1,5 @@
 #include "operaciones.h"
-
+// mejora menor para cumplir sugerencia
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
 int sumar(int a, int b) {
