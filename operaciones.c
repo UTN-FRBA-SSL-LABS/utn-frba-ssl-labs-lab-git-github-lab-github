@@ -2,7 +2,7 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(int a, int b) {
+int sumar(int a,int b) {
     return a + b;
 }
 
@@ -14,9 +14,9 @@ int restar(int a, int b) {
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
 
+// multiplica dos enteros usando el operador *
 int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+    return a * b; //La operacion * hace la multiplicacion entre a y b
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
