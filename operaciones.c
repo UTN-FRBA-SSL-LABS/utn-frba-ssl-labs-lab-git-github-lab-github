@@ -1,8 +1,8 @@
 #include "operaciones.h"
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
-
-int sumar(int a, int b) {
+// Suma dos enteros usando el operador + 
+int sumar(const int a,const int b) {
     return a + b;
 }
 
@@ -12,11 +12,9 @@ int restar(int a, int b) {
     return a - b;
 }
 
-/* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-
+/* Multiplica dos enteros usando el operador * */
 int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+    return a * b;
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
