@@ -7,7 +7,7 @@ int sumar(int a, int b) {
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
-
+//Resta dos números enteros usando un operador!
 int restar(int a, int b) {
     return a - b;
 }
