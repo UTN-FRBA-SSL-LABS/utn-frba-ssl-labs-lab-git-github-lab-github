@@ -7,7 +7,7 @@ int sumar(int a, int b) {
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
-
+// la funcion resta dos enteros usando el operador -
 int restar(const int a, const int b) {
     return a - b;
 }
