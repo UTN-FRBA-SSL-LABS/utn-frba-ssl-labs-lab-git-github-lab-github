@@ -3,7 +3,7 @@
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
 int sumar(const int a, const int b) {
-    return a + b;
+    return a + b;  //Realiza la suma entre a y b
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
