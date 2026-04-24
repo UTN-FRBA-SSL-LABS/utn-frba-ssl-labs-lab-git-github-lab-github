@@ -23,3 +23,7 @@ int multiplicar(int a, int b) {
 int esPar(int n) {
     return (n % 2) == 0;
 }
+
+int sumarMas2(int a) {
+    return a + 4;
+}
