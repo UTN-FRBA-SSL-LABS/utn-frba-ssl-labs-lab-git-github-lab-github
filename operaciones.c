@@ -2,25 +2,24 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(int a, int b) {
+int sumar(const int a,const int b) { // Ingresan dos valores inmodificables y se suman
     return a + b;
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
 
-int restar(int a, int b) {
+int restar(const int a, const int b) { // Ingresan dos valores inmodificables y se restan
     return a - b;
 }
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-
-int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+// Ingresan dos valores y se multiplican
+int multiplicar(const int a, const int b) {// Ingresan dos valores inmodificables y se multiplican
+    return a * b;
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
-int esPar(int n) {
+int esPar(const int n) { // Ingresan un valor inmodificable y se determina si es par o no
     return (n % 2) == 0;
 }
