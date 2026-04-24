@@ -771,12 +771,12 @@ RESPUESTA_P7=c
 
 ### Checklist
 
-- [ ] `feature/mi-funcion` mergeada a `main` vía PR
+- [x] `feature/mi-funcion` mergeada a `main` vía PR
 - [ ] PR del compañero revisado, aprobado y mergeado
-- [ ] Commit `wip: experimento roto` y su revert en el historial
-- [ ] Conflicto de `esPar` resuelto en `main`
-- [ ] Preguntas P1–P7 respondidas en este archivo
-- [ ] Todo pusheado a `main`
+- [x] Commit `wip: experimento roto` y su revert en el historial
+- [x] Conflicto de `esPar` resuelto en `main`
+- [x] Preguntas P1–P7 respondidas en este archivo
+- [x] Todo pusheado a `main`
 
 ### Verificación local
 
