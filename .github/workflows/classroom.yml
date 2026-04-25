@@ -135,7 +135,6 @@ jobs:
           [ "$(gh pr view "$PR" --json reviews \
             --jq '[.reviews[] | select(.state == "APPROVED")] | length')" -gt 0 ]
 
-<<<<<<< HEAD
       # ── C15–C21. Preguntas conceptuales ───────────────────────────
 
       - name: "C15. P1: concepto de branches"
