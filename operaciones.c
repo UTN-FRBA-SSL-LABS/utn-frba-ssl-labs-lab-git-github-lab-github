@@ -2,6 +2,7 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
+// const hace que las variables no sean modificables
 int sumar(const int a, const int b) {
     return a + b;
 }
