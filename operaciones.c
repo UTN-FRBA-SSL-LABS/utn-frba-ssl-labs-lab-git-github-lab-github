@@ -2,7 +2,8 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(int a, int b) {
+// const hace que las variables no sean modificables
+int sumar(const int a, const int b) {
     return a + b;
 }
 
@@ -11,12 +12,10 @@ int sumar(int a, int b) {
 int restar(int a, int b) {
     return a - b;
 }
-
+//Se multiplica a x b y se obtiene un resultado
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-
 int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+    return a * b;
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
