@@ -2,12 +2,12 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(int a, int b) {
+int sumar(const int a, const int b) {
     return a + b;
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
-
+//Recibe dos entero por parametros y retorna la resta entre ambos.
 int restar(int a, int b) {
     return a - b;
 }
