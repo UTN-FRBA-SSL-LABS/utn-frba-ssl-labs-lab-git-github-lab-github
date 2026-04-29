@@ -13,10 +13,9 @@ int restar(int a, int b) {
 }
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-
+/*La función recibe dos variables y las multiplica entre si para devolver ese resultado como valor. Debe respetarse un orden específico en la multiplicación de las variables*/
 int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+    return a * b;
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
