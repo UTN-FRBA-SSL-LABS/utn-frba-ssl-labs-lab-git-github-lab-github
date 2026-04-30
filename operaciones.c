@@ -27,3 +27,4 @@ int esPar(int n)
 {
     return (n % 2) == 0;
 }
+// esPAr funciona correctamente
