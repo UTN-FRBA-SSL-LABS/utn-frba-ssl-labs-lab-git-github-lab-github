@@ -287,11 +287,11 @@ c) Para que el historial de commits sea más corto y lineal
 d) Porque GitHub Classroom lo requiere para la corrección automática
 
 ```
-RESPUESTA_P1=
+RESPUESTA_P1=b
 ```
 
 ---
-
+git add
 ## Parte II — Colaboración con un compañero/a
 
 Hasta ahora trabajaste solo en tu propio repositorio. En un equipo real, varias personas trabajan sobre la misma base de código al mismo tiempo: cada una en su branch, proponiendo cambios via PR, revisando el trabajo de los demás.
@@ -414,7 +414,7 @@ c) Hacer un rebase interactivo para reescribir el historial antes de responder a
 d) Pedirle al owner que mergee igual y hacer el fix en un PR separado
 
 ```
-RESPUESTA_P2=
+RESPUESTA_P2=b
 ```
 
 ---
