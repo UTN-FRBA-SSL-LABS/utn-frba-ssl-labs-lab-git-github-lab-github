@@ -14,9 +14,15 @@ int restar(int a, int b) {
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
 
+<<<<<<< HEAD
 // Multiplica dos numeros enteros y devuelve el resultado
 int multiplicar(int a, int b) {
     return a * b;
+=======
+int multiplicar(int a, int b) {
+    (void)a; (void)b;
+    return 0; /* TODO: implementar */
+>>>>>>> origin/feature/conflicto-demo
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
