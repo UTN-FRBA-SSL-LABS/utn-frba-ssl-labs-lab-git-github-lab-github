@@ -17,7 +17,7 @@ int restar(const int a, const int b) {
 
 int multiplicar(int a, int b) {
     return a * b;
-}
+}         //Calcula el producto entre 2 enteros usando el operador *
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
