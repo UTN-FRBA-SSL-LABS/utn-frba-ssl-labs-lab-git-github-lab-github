@@ -1,8 +1,8 @@
 #include "operaciones.h"
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
-
-int sumar(int a, int b) {
+/* Al agregar las variables constantes son inmodificable en tiempo de ejecucion dando mas seguiadad al sistema*/
+int sumar(const int a, const int b) {
     return a + b;
 }
 
@@ -13,10 +13,9 @@ int restar(int a, int b) {
 }
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-
+/*esta funcion multiplica dos numeros enteros*/
 int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+    return a * b; /* TODO: implementar */
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
