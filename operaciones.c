@@ -2,8 +2,8 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(int a, int b) {
-    return a + b;
+int sumar(const int a, const int b) {
+    return a + b; /*se implementa la suma de dos números enteros constantes*/
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
@@ -13,10 +13,9 @@ int restar(int a, int b) {
 }
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-
+//Toma dos valores como parametro y devuelve la multiplicacion entre ellos
 int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+    return a * b;
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
