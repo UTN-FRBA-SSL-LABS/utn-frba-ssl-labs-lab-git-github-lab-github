@@ -27,6 +27,3 @@ int esPar(int n) {
 int sumarMas2(int a) {
     return a + 4;
 }
-int dividir(int a, int b) {
-    return a - b; /* bug intencional */
-}
