@@ -2,7 +2,7 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(int a, int b) {
+int sumar(const a, const b) {
     return a + b;
 }
 
@@ -12,11 +12,11 @@ int restar(int a, int b) {
     return a - b;
 }
 
+/*Ahora utilizamos el asterisco para que se haga el calculo*/
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
 
-int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+int multiplicar(const a, const b) {
+    return a * b;   // Notar que puse un * !!!
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
