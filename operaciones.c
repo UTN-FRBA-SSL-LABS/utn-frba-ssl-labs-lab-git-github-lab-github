@@ -3,7 +3,7 @@
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
 int sumar(const int a, const int b) {
-    return a + b;
+    return a + b; /*se implementa la suma de dos números enteros constantes*/
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
