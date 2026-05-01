@@ -18,6 +18,7 @@ int multiplicar(const int a, const int b) {
     return a * b;
 }
 
+
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
 int esPar(const int n) {
