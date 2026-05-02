@@ -20,6 +20,7 @@ int multiplicar(const int a,const int b) {
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
+// Se modifican a constaten porque no será modificadas
 int esPar(const int n) {
     return (n % 2) == 0;
 }
