@@ -13,7 +13,7 @@ int sumar(int a, int b);
 /* restar: devuelve a - b */
 int restar(int a, int b);
 
-/* multiplicar: devuelve a * b */
+/* multiplicar: sirve para calcular el producto de dos números (enteros o flotantes) a * b */
 int multiplicar(int a, int b);
 
 /* esPar: devuelve 1 si n es par, 0 si es impar */
