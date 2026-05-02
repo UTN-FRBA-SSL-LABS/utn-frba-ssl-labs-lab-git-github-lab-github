@@ -1,8 +1,5 @@
 #include "operaciones.h"
-/*Usar const para los parámetros en C es una práctica recomendada y excelente. 
-Indica que la función no modificará el valor del argumento, convirtiéndolo en "solo lectura". 
-Esto mejora la seguridad, previene errores accidentales, documenta la intención del código y ayuda al compilador a optimizar.
- */
+/*Usar const en los parámetros en C es una práctica recomendada indica que la función no modificará el valor del argumento. */
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
 int sumar(const int a, const int b) {
