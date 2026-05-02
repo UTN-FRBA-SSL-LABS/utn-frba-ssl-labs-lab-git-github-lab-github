@@ -16,4 +16,4 @@ clean:
 	rm -f *.o calculadora
 
 test:
-	@bash test_local.sh
+	@bash test_local.sh		

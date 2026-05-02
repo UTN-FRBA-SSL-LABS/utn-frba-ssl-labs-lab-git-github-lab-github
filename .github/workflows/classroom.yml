@@ -7,6 +7,7 @@ on:
       - "operaciones.c"
       - "readme.md"
 
+
 permissions:
   checks: write
   actions: read
@@ -171,6 +172,7 @@ jobs:
         continue-on-error: true
         run: grep -q 'RESPUESTA_P7=c' readme.md
 
+
       # ── Puntaje final ──────────────────────────────────────────────
 
       - name: Calcular puntaje
@@ -223,6 +225,20 @@ jobs:
           SCORE=$((SCORE + $(pts "$O_C19"  3)))
           SCORE=$((SCORE + $(pts "$O_C20"  3)))
           SCORE=$((SCORE + $(pts "$O_C21"  3)))
+          SCORE=$((SCORE + $(pts "$O_C1"   5)))
+          SCORE=$((SCORE + $(pts "$O_C2"   5)))
+          SCORE=$((SCORE + $(pts "$O_C3"  10)))
+          SCORE=$((SCORE + $(pts "$O_C4"  10)))
+          SCORE=$((SCORE + $(pts "$O_C5"  10)))
+          SCORE=$((SCORE + $(pts "$O_C6"  10)))
+          SCORE=$((SCORE + $(pts "$O_C7"  10)))
+          SCORE=$((SCORE + $(pts "$O_C8"   5)))
+          SCORE=$((SCORE + $(pts "$O_C9"   5)))
+          SCORE=$((SCORE + $(pts "$O_C10"  5)))
+          SCORE=$((SCORE + $(pts "$O_C11"  5)))
+          SCORE=$((SCORE + $(pts "$O_C12"  5)))
+          SCORE=$((SCORE + $(pts "$O_C13"  5)))
+          SCORE=$((SCORE + $(pts "$O_C14" 10)))
 
           {
             echo "## Puntaje: $SCORE / 100"
