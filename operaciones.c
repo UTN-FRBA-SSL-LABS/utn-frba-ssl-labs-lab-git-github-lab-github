@@ -2,13 +2,14 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(int a, const int b) {
+//Fue añadido en un solo el const porque me olvide
+int sumar(const int a, const int b) {
     return a + b;
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
 
-int restar(int a, const int b) {
+int restar(const int a, const int b) {
     return a - b;
 }
 
