@@ -2,7 +2,7 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(const int a, const int b) {
+int sumar(const int a, int b) { //corrijo lo solicitado en el PR
     return a + b;
 }
 
