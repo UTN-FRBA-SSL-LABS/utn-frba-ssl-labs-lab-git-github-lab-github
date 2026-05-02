@@ -2,19 +2,19 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(int a, int b) {
+int sumar(const int a, const int b) {
     return a + b;
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
 
-int restar(int a, int b) {
+int restar(const int a, const int b) {
     return a - b;
 }
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-/* Calcula el producto de dos numeros enteros */
-int multiplicar(int a, int b) {
+/* Multiplicar recibe 2 numeros enteros y los multiplica utilizando el operador "*" luego retorna el resultado */
+int multiplicar(const int a, const int b) {
 return a * b;
 }
 
