@@ -25,3 +25,4 @@ int esPar(int n) {
     return (n % 2) == 0; /* version main */
 }
 // Comentario de prueba para forzar commit
+// Cambio final para aprobacion
