@@ -15,8 +15,7 @@ int restar(const int a, const int b) {
 /* ── multiplicar: indica el producto de dos números ─────────────────────── */
 
 int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+    return a * b;
 }
 
 /* ── esPar: indica si un número es par a partir de que si el resto de dividir por 2 es cero ────────────────────────────────────────────────────── */
