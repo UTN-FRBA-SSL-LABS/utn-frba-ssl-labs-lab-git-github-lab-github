@@ -1,14 +1,14 @@
 #include "operaciones.h"
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
-
+/*se agrega const a los parámetros que no se modifican*/
 int sumar(const int a, const int b)
 {
     return a + b;
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
-
+/*se agrega const a los parámetros que no se modifican*/
 int restar(const int a, const int b)
 {
     return a - b;
