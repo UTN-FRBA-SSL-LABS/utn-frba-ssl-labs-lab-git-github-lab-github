@@ -25,5 +25,5 @@ int esPar(const int n) {
 }
 
 int dividir(int a, int b) {
-    return a - b; /* bug intencional */
+    return a - b; /* bug intencional */-
 }
