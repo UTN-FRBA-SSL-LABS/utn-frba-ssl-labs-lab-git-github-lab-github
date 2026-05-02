@@ -21,8 +21,8 @@ int multiplicar(int a, int b) {
 
 /* ── esPar: indica si un número es par a partir de que si el resto de dividir por 2 es cero ────────────────────────────────────────────────────── */
 
-int esPar(int n) {
-    return (n % 2) == 0; /* version main */
+int esPar(const int n) {
+    return (n % 2) == 0; /* version main*/
 }
 
 int dividir(int a, int b) {
