@@ -13,14 +13,14 @@ int restar(int a, int b) {
 }
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-
-int multiplicar(int a, int b) {
-    (void)a; (void)b;
-    return 0; /* TODO: implementar */
+//Devuelve el resultado de multiplicar ambos parámetros
+int multiplicar(const int a,const int b) {
+    return a * b; /* TODO: implementar */
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
-int esPar(int n) {
+// Se modifican a constaten porque no será modificadas
+int esPar(const int n) {
     return (n % 2) == 0;
 }
