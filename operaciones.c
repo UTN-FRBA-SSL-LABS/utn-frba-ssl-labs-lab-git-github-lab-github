@@ -16,7 +16,7 @@ int restar(int a, int b) {
 
 int multiplicar(int a, int b) {
     return a * b;
-}
+} //Esta funcion toma un valor a y un valor b, y devuelve el resultado de multiplicar a por b
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
