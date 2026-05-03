@@ -2,6 +2,7 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
+// Esta funcion se encarga de sumar el valor de las variables a y b en una sola linea
 int sumar(const int a, const int b) {
     return a + b;
 }
