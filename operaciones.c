@@ -2,6 +2,7 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
+// suma dos constantes numericas y retorna el resultado
 int sumar(const int a, const int b) {
     return a + b;
 }
