@@ -1,8 +1,9 @@
 #include "operaciones.h"
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
+/* const indica que los parametros no se modifican dentro de la funcion */
 
-int sumar(int a, int b) {
+int sumar(const int a, const int b) {
     return a + b;
 }
 
