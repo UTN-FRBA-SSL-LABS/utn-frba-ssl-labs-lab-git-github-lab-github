@@ -16,7 +16,6 @@ int restar(const int a, const int b) {
 
 
 
-// Multiplica dos enteros recibidos por valor, lo hace usando el operador * y devuelve el resultado
 // Calcula el producto de a y b y devuelve el resultado 
 int multiplicar(const int a, const int b) {
     return a * b;
