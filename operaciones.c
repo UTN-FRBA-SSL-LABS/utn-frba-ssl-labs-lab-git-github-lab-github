@@ -1,8 +1,7 @@
 #include "operaciones.h"
 
-/* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
-
-int sumar(int a, int b) {
+// Función sumar mejorada con const
+int sumar(const int a, const int b) {
     return a + b;
 }
 
@@ -11,10 +10,8 @@ int sumar(int a, int b) {
 int restar(int a, int b) {
     return a - b;
 }
-
-/* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-/* Devuelve el producto de dos enteros */
-int multiplicar(int a, int b) {
+// Función multiplicar mejorada con const
+int multiplicar(const int a, const int b) {
     return a * b;
 }
 
