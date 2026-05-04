@@ -29,7 +29,7 @@ git --version
 
 ### Cloná el repositorio
 
-Una vez que aceptaste el assignment en GitHub Classroom, GitHub crea una copia del repositorio para vos. Copiá la URL de tu repo (botón verde **Code → HTTPS**) y ejecutá:
+Una vez que aceptaste el assignment en GitHub Classroom, GitHub crea una copia del repositorio para vos. Copiá la URL de tu repo (botón verde **Code → HTTPS**) y ejecutá.:
 
 ```bash
 git clone <URL-de-tu-repo>
