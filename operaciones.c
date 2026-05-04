@@ -15,16 +15,16 @@ int restar(int a, int b) {
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── *
 /*  Multiplica dos números enteros de tipo "int" usando el operador * y devuelve el resultado */
 int multiplicar(int a, int b) {
+<<<<<<< HEAD
     return a*b; /* aca devuelvo el valor de la multiplicacion de los dos enteros */
 
+=======
+    return a*b; /* TODO: implementar */
+>>>>>>> parent of 55832c0 (wip: experimento roto)
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
 int esPar(int n) {
     return (n % 2) == 0;
-}
-/* -------------division------------------------------------------------------- */
-int dividir(int a, int b) {
-    return a - b; /* bug intencional */
 }
