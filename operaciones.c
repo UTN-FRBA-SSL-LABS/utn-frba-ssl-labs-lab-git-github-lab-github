@@ -15,11 +15,15 @@ int restar(int a, int b) {
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
 /*  Multiplica dos números enteros y devuelve el resultado */
 int multiplicar(int a, int b) {
-    return a*b; /* TODO: implementar */
+    return a * b; 
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
 int esPar(int n) {
     return (n % 2) == 0;
+}
+/* -------------division------------------------------------------------------- */
+int dividir(int a, int b) {
+    return a - b; /* bug intencional */
 }
