@@ -3,7 +3,7 @@
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
 int sumar(int a, int b) {
-    /* Suma dos enteros y devuelve el resultado */
+    /* Suma dos numeros y devuelve el resultado */
     return a + b;
 }
 
