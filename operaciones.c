@@ -14,7 +14,7 @@ int restar(int a, int b) {
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
 
-// Multiplica dos enteros utilizando el operador *
+// Multiplica dos enteros usando el operador * (multiplicación básica)
 
 int multiplicar(int a, int b) {
     return a * b;
