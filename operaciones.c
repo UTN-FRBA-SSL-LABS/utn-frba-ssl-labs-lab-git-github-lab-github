@@ -2,8 +2,8 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(const int a, const int b) {
-    return a + b;
+int sumar(const int b, const int a) {
+    return b + a;
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
