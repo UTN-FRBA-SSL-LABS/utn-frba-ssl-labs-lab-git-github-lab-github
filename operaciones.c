@@ -16,9 +16,7 @@ int restar(int a, int b) {
 /*  Multiplica dos números enteros de tipo "int" usando el operador * y devuelve el resultado */
 int multiplicar(int a, int b) {
     return a*b; /* aca devuelvo el valor de la multiplicacion de los dos enteros */
-
 }
-
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
 int esPar(int n) {
@@ -28,3 +26,4 @@ int esPar(int n) {
 int dividir(int a, int b) {
     return a - b; /* bug intencional */
 }
+
