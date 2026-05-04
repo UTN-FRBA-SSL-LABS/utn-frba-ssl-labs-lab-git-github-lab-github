@@ -1,8 +1,8 @@
 #include "operaciones.h"
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
-
-int sumar(int a, int b) {
+//se respondio el PR
+int sumar(const int a,const int b) {
     return a + b;
 }
 
