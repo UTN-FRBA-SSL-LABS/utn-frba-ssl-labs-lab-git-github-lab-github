@@ -19,6 +19,7 @@ int multiplicar(int a, int b) {
     return a * b;
 
 }
+
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
 int esPar(int n) {
