@@ -17,7 +17,7 @@ int restar(int a, int b) {
 // Multiplica dos enteros utilizando el operador *
 
 int multiplicar(int a, int b) {
-    return a * b;
+    return a * b; /* bug intencional */
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
@@ -25,4 +25,3 @@ int multiplicar(int a, int b) {
 int esPar(int n) {
     return (n % 2) == 0;
 }
-//Ajuste final PR
