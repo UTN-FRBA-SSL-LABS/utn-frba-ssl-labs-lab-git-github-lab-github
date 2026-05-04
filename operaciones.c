@@ -1,18 +1,18 @@
 #include "operaciones.h"
 
-/* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
+/* Funcion sumar ya implementada, referencia de estilo */
 
 int sumar(int a, int b) {
     return a + b;
 }
 
-/* ── restar — ya implementada ────────────────────────────────────────────── */
+/* Funcion restas */
 
 int restar(int a, int b) {
     return a - b;
 }
 
-/* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
+/* Funcion multiplicar*/
 
 int multiplicar(int a, int b) {
 /* TODO: implementar */
@@ -21,7 +21,7 @@ return a * b;
 
 }
 
-/* ── esPar ────────────────────────────────────────────────────────────────── */
+/* Funcion esPar */
 
 int esPar(int n) {
     return (n % 2) == 0;
