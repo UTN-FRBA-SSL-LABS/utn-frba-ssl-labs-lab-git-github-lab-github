@@ -13,7 +13,7 @@ int restar(int a, int b) {
 }
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
-
+//funcion que hace el producto de a por b
 int multiplicar(int a, int b) {
     return a * b;
 }
