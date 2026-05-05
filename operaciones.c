@@ -15,7 +15,6 @@ const int restar(int a, int b) {
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
 
 const int multiplicar(int a, int b) {
-    (void)a; (void)b;
     return 0; /* TODO: implementar */
 }
 
