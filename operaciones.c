@@ -7,7 +7,6 @@ int sumar(const int a, const int b) {
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
-
 int restar(const int a, int b) {
     return a - b;
 }
@@ -15,13 +14,11 @@ int restar(const int a, int b) {
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
 
 /*Multiplica dos numeros a y b utilizando el operador * */
-
 int multiplicar(const int a, const int b) {
     return a * b;
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
-
 int esPar(const int n) {
     return (n % 2) == 0;
 }
