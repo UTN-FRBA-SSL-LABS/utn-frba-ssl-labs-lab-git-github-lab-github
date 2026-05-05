@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2a4L9bD1)
 # Laboratorio: Git y GitHub
 
 ## Antes de empezar
@@ -286,7 +287,8 @@ c) Para que el historial de commits sea más corto y lineal
 d) Porque GitHub Classroom lo requiere para la corrección automática
 
 ```
-RESPUESTA_P1=
+RESPUESTA_P1=b
+El proposito de usar una "branch", en el caso en que varios esten trabajando en el mismo proyecto, cada uno esta trabajando en el mismo archivo base, pero haciendo las modificaciones por separado, es decir, si alguien modifica algo, no va directamente al programa principal, porque luego un compañero que estaba trabajando al mismo tiempo en otra funcionalidad del programa, tiene que clonar/"pull" el proyecto y no sabe si con las nuevas lineas de codigo que agrego el otro va a seguir funcionando su propio codigo que estaba haciendo, para eso se usan los brunch para trabajar todos juntos pero en archivos separados. 
 ```
 
 ---
