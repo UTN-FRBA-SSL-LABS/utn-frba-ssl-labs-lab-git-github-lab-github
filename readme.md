@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2a4L9bD1)
 # Laboratorio: Git y GitHub
 
 ## Antes de empezar
@@ -9,6 +10,15 @@ En proyectos de software real, raramente trabajás solo. Un equipo puede tener d
 Git resuelve exactamente eso. Pero Git no es solo un "backup con historial": es un protocolo de colaboración. La forma en que usás Git — cómo organizás los commits, qué nombres le ponés a las branches, cómo hacés los reviews — tiene un impacto directo en la calidad del trabajo en equipo.
 
 Este laboratorio simula el flujo de trabajo que vas a encontrar en equipos profesionales: ramas de trabajo, pull requests, revisión de código y resolución de conflictos.
+
+# Laboratorio: Git y GitHub
+
+**Nombre:** Rubi Araceli Condori
+**Compañero/a:** Teo Rosenberg
+
+---
+
+## Antes de empezar
 
 ### Herramientas necesarias
 
@@ -104,6 +114,8 @@ Cada respuesta correcta suma puntos. Las respuestas se validan automáticamente 
 
 Una branch (rama) es una línea de desarrollo independiente. Te permite trabajar en algo nuevo sin tocar el código que ya funciona, y luego integrar esos cambios cuando estén listos y revisados.
 
+Una branch (rama) es una línea de desarrollo paralela. Permite trabajar en algo nuevo sin tocar el código que ya funciona en `main`. Cuando terminás, integrás los cambios con un Pull Request.
+
 ```
 main     ──●──────────────────────────●──▶
             \                        /
@@ -195,6 +207,8 @@ git commit -m "Implementa multiplicar con operador *"
 
 Un mensaje de commit debe explicar **qué hace** el cambio, no *cómo* lo hace. Tiene que ser legible para un compañero que ve el historial sin ver el código. Imaginá que alguien necesita entender, en 30 segundos, qué pasó en este proyecto hace seis meses: los mensajes de commit son la primera fuente de información.
 
+Un mensaje de commit debe explicar **qué hace** el cambio, no *cómo* lo hace. Tiene que ser legible para un compañero que ve el historial sin ver el código.
+
 | ❌ Mal | ✅ Bien |
 |---|---|
 | `fix` | `Corrige bug en esPar para negativos` |
@@ -245,6 +259,8 @@ Un **Pull Request (PR)** es una propuesta para integrar los cambios de una branc
 
 En equipos profesionales, el proceso de PR es parte central de la cultura de ingeniería: mejora la calidad del código, distribuye el conocimiento del sistema entre todo el equipo y sirve como documentación de las decisiones de diseño tomadas en el camino.
 
+Un **Pull Request (PR)** es una propuesta para integrar los cambios de una branch a otra. Es el momento de revisión: antes de que el código entre a `main`, alguien puede leerlo, comentarlo y aprobarlo.
+
 En GitHub:
 
 1. Entrá a tu repositorio
@@ -286,8 +302,12 @@ c) Para que el historial de commits sea más corto y lineal
 d) Porque GitHub Classroom lo requiere para la corrección automática
 
 ```
-RESPUESTA_P1=
+RESPUESTA_P1=b
 ```
+```
+PARTE_I_COMPLETA=SI
+```
+_(escribí SI cuando el PR esté mergeado)_
 
 ---
 
@@ -373,6 +393,8 @@ El **owner** revisa el PR:
 
 El **compañero** ve el comentario, hace el cambio pedido y lo pushea. No hace falta abrir un PR nuevo: el commit aparece automáticamente en el PR existente.
 
+El **compañero** ve el comentario, hace el cambio pedido y lo pushea:
+
 ```bash
 # (hace el cambio en el archivo)
 git add operaciones.c
@@ -413,9 +435,13 @@ c) Hacer un rebase interactivo para reescribir el historial antes de responder a
 d) Pedirle al owner que mergee igual y hacer el fix en un PR separado
 
 ```
-RESPUESTA_P2=
+RESPUESTA_P2=b
 ```
-
+=======
+```
+PARTE_II_COMPLETA=SI
+```
+_(escribí SI cuando el PR del compañero esté aprobado y mergeado)_
 ---
 
 ## Parte III — Revertir un error
@@ -423,6 +449,7 @@ RESPUESTA_P2=
 En el día a día es común commitear algo que no debería estar: código de prueba, un debug print, o directamente un bug. Git permite deshacerlo de forma segura.
 
 La clave está en entender que cuando trabajás en un repositorio compartido, **el historial es compartido**. Si vos pusheaste un commit y otros miembros del equipo ya descargaron esos cambios, modificar el historial de forma destructiva (borrando o reescribiendo commits) causa problemas para todos ellos: sus repos quedan en un estado inconsistente con el remoto. Por eso existe `git revert`.
+En el día a día es común commitear algo que no debería estar. Git permite deshacerlo sin borrar la historia.
 
 Antes de arrancar, asegurate de estar en `main`:
 
@@ -455,6 +482,8 @@ git push
 ### Paso 16 — Revertirlo con `git revert`
 
 `git revert` crea un nuevo commit que deshace los cambios del commit indicado. A diferencia de `git reset`, no modifica el historial existente: agrega un commit nuevo encima. Esto es seguro en ramas compartidas porque no causa conflictos para quienes ya descargaron los commits anteriores.
+
+`git revert` crea un nuevo commit que deshace los cambios del commit anterior. A diferencia de `git reset`, no borra historia — es seguro en ramas compartidas.
 
 > Si nunca usaste vim, configurá nano como editor antes de correr el revert:
 > ```bash
@@ -494,8 +523,16 @@ c) Porque `git reset --hard` modifica el historial local, generando conflictos p
 d) Porque GitHub bloquea automáticamente los push después de un `git reset --hard`
 
 ```
-RESPUESTA_P3=
+RESPUESTA_P3=c
 ```
+**P1** — ¿Por qué `git revert` es preferible a `git reset --hard` cuando ya hiciste push de los cambios?
+
+> R: git revert es preferible porque no altera el historial que ya fue compartido.
+
+```
+PARTE_III_COMPLETA=SI
+```
+_(escribí SI cuando el revert esté pusheado)_
 
 ---
 
@@ -514,6 +551,8 @@ El repositorio ya tiene una branch `feature/conflicto-demo` que implementa `esPa
 Los conflictos son **normales** en el trabajo colaborativo — no son un error del sistema ni una falla de coordinación. Ocurren cuando dos branches modificaron la misma línea del mismo archivo. Git no sabe cuál versión es la correcta: esa decisión la tiene que tomar un humano que entiende el contexto.
 
 Cuanto más seguido se integran las ramas (y más pequeñas son las features), menos conflictos se acumulan. Los conflictos grandes y difíciles de resolver suelen ser síntoma de branches que estuvieron demasiado tiempo sin integrarse con `main`.
+
+Un conflicto ocurre cuando dos branches modificaron la misma línea del mismo archivo. Git no sabe cuál versión es la correcta — esa decisión la tiene que tomar un humano.
 
 ```
 main                    →  esPar: return (n % 2) == 0; /* version main */
@@ -570,12 +609,12 @@ Abrí `operaciones.c`. Vas a ver algo así:
 
 ```c
 int esPar(int n) {
-<<<<<<< HEAD
+
     return (n % 2) == 0; /* version main */
-=======
+
     return (n & 1) == 0;
->>>>>>> origin/feature/conflicto-demo
 }
+
 ```
 
 - `<<<<<<< HEAD` marca el inicio de **tu versión** (la de main)
@@ -626,8 +665,17 @@ c) `(n & 1) == 0` no funciona con números negativos en ningún compilador C est
 d) No hay ninguna diferencia; el compilador genera exactamente el mismo código para ambas
 
 ```
-RESPUESTA_P4=
+RESPUESTA_P4=b
 ```
+**P2** — Describí con tus palabras qué diferencia hay entre las dos implementaciones de `esPar` que conflictuaban. ¿En qué caso podría importar elegir una sobre la otra?
+
+> R: Ambas pueden dar el mismo resultado, pero no todas son igual de claras, eficientes o seguras.
+Por eso, normalmente se prefiere la versión con % 2 == 0.
+
+```
+PARTE_IV_COMPLETA=SI
+```
+_(escribí SI cuando el conflicto esté resuelto y pusheado)_
 
 ---
 
@@ -644,7 +692,7 @@ c) Si hay que revertir un cambio puntual es imposible sin deshacer todo lo del d
 d) Git rechaza commits que modifiquen demasiados archivos al mismo tiempo
 
 ```
-RESPUESTA_P5=
+RESPUESTA_P5=c
 ```
 
 ---
@@ -660,7 +708,7 @@ c) `git fetch` solo descarga la branch actual; `git pull` descarga todas las bra
 d) `git pull` siempre pide confirmación antes de modificar archivos locales; `git fetch` no
 
 ```
-RESPUESTA_P6=
+RESPUESTA_P6=b
 ```
 
 ---
@@ -676,8 +724,23 @@ c) Qué problema resuelve o qué funcionalidad agrega, cómo se verificó que fu
 d) El tiempo que tardó en implementarse y el nombre del autor
 
 ```
-RESPUESTA_P7=
+RESPUESTA_P7=c
 ```
+
+**P3** — Un compañero te dice: "yo hago un solo commit al final del día con todo lo que hice". ¿Qué problemas puede traer esa práctica? ¿Qué le dirías?
+
+> R: Hacer un solo commit al final mezcla todo y hace difícil entender qué cambió o encontrar errores. Mejor hacer commits chicos y seguidos, así todo queda más claro y fácil de revisar.
+
+**P4** — ¿Cuál es la diferencia entre `git fetch` y `git pull`? ¿Cuándo preferirías usar uno sobre el otro?
+
+> R: git fetch trae los cambios pero no los aplica.
+git pull los trae y los mezcla en tu rama.
+Uso fetch si quiero revisar antes, y pull si quiero actualizar rápido.
+
+**P5** — ¿Qué información debería tener la descripción de un Pull Request para que sea útil para quien lo revisa?
+
+> R: Un PR debería decir qué se hizo, por qué y cómo probarlo. Con eso el revisor entiende rápido y puede evaluar mejor.
+
 
 ---
 
@@ -743,3 +806,12 @@ Para ver los resultados:
 También podés ver un resumen rápido: en la pestaña **Code**, junto a cada commit aparece un ícono ✅ (todos los checks pasaron) o ❌ (alguno falló). Hacé click en ese ícono para ver el detalle.
 
 El puntaje mínimo para aprobar es **60 / 100**.
+
+- `feature/mi-funcion` mergeada a `main` vía PR
+- PR del compañero revisado, aprobado y mergeado
+- Commit `wip: experimento roto` y su revert en el historial
+- Conflicto de `esPar` resuelto en `main`
+- Preguntas P1–P5 respondidas
+- Push a `main`
+
+El CI corre automáticamente. En la pestaña **Actions** podés ver qué checks pasan.

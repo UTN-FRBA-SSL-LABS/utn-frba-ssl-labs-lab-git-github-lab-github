@@ -223,6 +223,20 @@ jobs:
           SCORE=$((SCORE + $(pts "$O_C19"  3)))
           SCORE=$((SCORE + $(pts "$O_C20"  3)))
           SCORE=$((SCORE + $(pts "$O_C21"  3)))
+          SCORE=$((SCORE + $(pts "$O_C1"   5)))
+          SCORE=$((SCORE + $(pts "$O_C2"   5)))
+          SCORE=$((SCORE + $(pts "$O_C3"  10)))
+          SCORE=$((SCORE + $(pts "$O_C4"  10)))
+          SCORE=$((SCORE + $(pts "$O_C5"  10)))
+          SCORE=$((SCORE + $(pts "$O_C6"  10)))
+          SCORE=$((SCORE + $(pts "$O_C7"  10)))
+          SCORE=$((SCORE + $(pts "$O_C8"   5)))
+          SCORE=$((SCORE + $(pts "$O_C9"   5)))
+          SCORE=$((SCORE + $(pts "$O_C10"  5)))
+          SCORE=$((SCORE + $(pts "$O_C11"  5)))
+          SCORE=$((SCORE + $(pts "$O_C12"  5)))
+          SCORE=$((SCORE + $(pts "$O_C13"  5)))
+          SCORE=$((SCORE + $(pts "$O_C14" 10)))
 
           {
             echo "## Puntaje: $SCORE / 100"
@@ -257,6 +271,22 @@ jobs:
             row "C19. P5: commits atomicos"                         "$O_C19"  3
             row "C20. P6: fetch vs pull"                            "$O_C20"  3
             row "C21. P7: descripcion de PR"                        "$O_C21"  3
+            echo "| Test | Resultado | Puntos |"
+            echo "|------|:---------:|-------:|"
+            row "C1.  Proyecto compila"                             "$O_C1"   5
+            row "C2.  multiplicar implementada"                     "$O_C2"   5
+            row "C3.  multiplicar devuelve resultado correcto"      "$O_C3"  10
+            row "C4.  Commit wip: experimento roto existe"          "$O_C4"  10
+            row "C5.  Revert del experimento existe"                "$O_C5"  10
+            row "C6.  Sin conflict markers en operaciones.c"        "$O_C6"  10
+            row "C7.  esPar funciona correctamente"                 "$O_C7"  10
+            row "C8.  Ningun mensaje de commit vacio o muy corto"   "$O_C8"   5
+            row "C9.  Branch feature/mi-funcion fue creada"         "$O_C9"   5
+            row "C10. PR de feature/mi-funcion a main mergeado"     "$O_C10"  5
+            row "C11. Branch sugerencia/* fue creada"               "$O_C11"  5
+            row "C12. PR de sugerencia/* mergeado"                  "$O_C12"  5
+            row "C13. PR de sugerencia/* tiene al menos un review"  "$O_C13"  5
+            row "C14. PR de sugerencia/* aprobado por otro usuario" "$O_C14" 10
           } >> "$GITHUB_STEP_SUMMARY"
 
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
