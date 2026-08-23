@@ -14,6 +14,5 @@ operaciones.o: operaciones.c operaciones.h
 
 clean:
 	rm -f *.o calculadora
-
 test:
 	@bash test_local.sh
